@@ -1,0 +1,5 @@
+numbers = [4, 7, 1, 9, 3, 6]
+maximum = max(numbers)
+minimum = min(numbers)
+print("Maximum element:", maximum)
+print("Minimum element:", minimum)
