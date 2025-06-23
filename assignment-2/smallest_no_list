@@ -1,0 +1,3 @@
+numbers = [10, 5, 3, 8, 2, 7]
+smallest = min(numbers)
+print("The smallest element is:", smallest)
