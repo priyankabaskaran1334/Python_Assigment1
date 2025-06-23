@@ -1,0 +1,4 @@
+from collections import Counter
+my_list = [1, 2, 2, 3, 1, 4, 2, 3]
+frequency = Counter(my_list)
+print("Frequencies:", frequency)
