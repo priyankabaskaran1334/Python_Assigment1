@@ -1,0 +1,8 @@
+def count_special_characters(statement):
+    count = 0
+    for char in statement:
+        if not char.isalnum():  # If not alphanumeric (not a letter or digit)
+            count += 1
+    return count
+statement = "Hello, World! @2025 #Python"
+print("Number of special characters:", count_special_characters(statement))
