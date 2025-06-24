@@ -1,0 +1,15 @@
+def max_profit(prices):
+    if not prices:
+        return 0
+min_price1 = float('inf')
+    profit1 = 0
+min_price2 = float('inf')
+    profit2 = 0
+for price in prices:
+min_price1 = min(min_price1, price)
+      profit1 = max(profit1, price - min_profit2)
+min_price2 = min(min_price2, price - profit1)
+      profit2 = max(profit2, price - min_price2)
+return profit2
+prices = [3,3,5,0,0,3,1,4]
+print("Max profit with at most 2 transactions:", max_profit(prices))
