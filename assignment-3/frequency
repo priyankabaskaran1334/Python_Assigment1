@@ -1,0 +1,8 @@
+from collections import Counter
+arr = [1, 2, 2, 3, 3, 3, 4, 4, 4, 4]
+freq = Counter(arr)
+max_freq = max(freq.values())
+max_elements = [k for k, v in freq.items() if v == max_freq]
+print("Frequency of each element:", dict(freq))
+print("Highest frequency:", max_freq)
+print("Element(s) with highest frequency:", max_elements)
