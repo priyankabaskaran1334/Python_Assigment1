@@ -1,0 +1,8 @@
+def count_negatives(numbers):
+    count = 0
+    for num in numbers:
+        if num < 0:
+            count += 1
+    return count
+numbers = [16,-18,27,-16,23,-21,19]
+print("Number of negative numbers:", count_negatives(numbers))
