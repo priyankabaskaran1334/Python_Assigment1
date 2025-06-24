@@ -1,0 +1,13 @@
+def print_repeated_elements(arr):
+    seen = set()
+    repeated = set()
+
+    for element in arr:
+        if element in seen:
+            repeated.add(element)
+        else:
+            seen.add(element)
+
+    print("Repeated elements:", list(repeated))
+arr = [1, 2, 3, 2, 4, 5, 1, 6, 3]
+print_repeated_elements(arr)
