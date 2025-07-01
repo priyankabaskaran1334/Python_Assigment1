@@ -1,0 +1,7 @@
+def find_peak(numbers):
+    n = len(numbers)
+    if n == 1:
+        return 0
+    for i in range(n):
+        if (i == 0 or numbers[i] > numbers[i-1]) and (i == n-1 or numbers[i] > numbers[i+1]):
+            return i
