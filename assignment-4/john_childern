@@ -1,0 +1,11 @@
+def peter_vehicles(m, n, x):
+    remaining = m % n
+    peter_gets = min(x, remaining)
+    if m % 2 == 0:
+        return peter_gets, "Peter is luckier!"
+    else:
+        return peter_gets
+m = 25
+n = 4
+x = 3
+print(peter_vehicles(m, n, x))  # Output: (1) or (1, "Peter is luckier!") if even
