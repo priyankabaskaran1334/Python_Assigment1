@@ -1,0 +1,8 @@
+arr = [1, 2, 2, 3, 4, 4, 4, 5, 5, 5]
+freq = {}
+for num in arr:
+    freq[num] = freq.get(num, 0) + 1
+max_freq = max(freq.values())
+elements_with_max_freq = [num for num, count in freq.items() if count == max_freq]
+result = [max_freq, elements_with_max_freq]
+print(result)
