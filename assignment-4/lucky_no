@@ -1,0 +1,9 @@
+def is_lucky_recursive(num, counter=2):
+    if counter > num:
+        return True
+    if num % counter == 0:
+        return False
+    next_pos = num - num // counter
+    return is_lucky_recursive(next_pos, counter + 1)
+print(is_lucky_recursive(19))  
+print(is_lucky_recursive(20))  
